@@ -299,9 +299,18 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 // $primary:       $blue !default;
-$primary: $red !default;
+$primary: $blue !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
+$brand-01: #f2a09e;
+$brand-02: #e7adac;
+$brand-03: #f3d9d8;
+$gray-01: #1e1e1e;
+$gray-02: #888888;
+$gray-03: #bec2bd;
+$gray-04: #f2f2f2;
+$gray-05: #fafafa;
+$white: #ffffff;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -318,6 +327,15 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
+  "brand-01": $brand-01,
+  "brand-02": $brand-02,
+  "brand-03": $brand-03,
+  "gray-01": $gray-01,
+  "gray-02": $gray-02,
+  "gray-03": $gray-03,
+  "gray-04": $gray-04,
+  "gray-05": $gray-05,
+  "white": $white,
   "dark": $dark,
 ) !default;
 // scss-docs-end theme-colors-map
@@ -379,7 +397,8 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+// $enable-rfs: true !default;
+$enable-rfs: false !default;
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -415,11 +434,21 @@ $gradient: linear-gradient(
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
+  // 1: $spacer * 0.25,
+  // 2: $spacer * 0.5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
+  1: $spacer * 0.5,
+  2: $spacer * 0.75,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 1.75,
+  7: $spacer * 2,
+  8: $spacer * 2.25,
+  9: $spacer * 2.75,
+  10: $spacer * 4,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -440,8 +469,10 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: null !default;
-$body-color: $gray-900 !default;
-$body-bg: $white !default;
+// $body-color: $gray-900 !default;
+$body-color: $brand-01 !default;
+// $body-bg: $white !default;
+$body-bg: $gray-05 !default;
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;
@@ -456,7 +487,8 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+// $link-decoration: underline !default;
+$link-decoration: none !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -477,7 +509,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 0rem !default;
 
 // Grid breakpoints
 //
@@ -626,7 +658,8 @@ $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
+// $font-weight-bolder: bolder !default;
+$font-weight-bolder: 700 !default;
 
 $font-weight-base: $font-weight-normal !default;
 
@@ -654,11 +687,13 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 0.5 !default;
+// $headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: $spacer * 0 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+// $headings-line-height: 1.2 !default;
+$headings-line-height: 1.5 !default;
 $headings-color: inherit !default;
 // scss-docs-end headings-variables
 

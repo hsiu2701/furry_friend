@@ -35,7 +35,7 @@ function App() {
 
       <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-brand-01"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
