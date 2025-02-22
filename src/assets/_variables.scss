@@ -311,6 +311,7 @@ $gray-03: #bec2bd;
 $gray-04: #f2f2f2;
 $gray-05: #fafafa;
 $white: #ffffff;
+$red-01: #e53e3e;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -337,6 +338,7 @@ $theme-colors: (
   "gray-05": $gray-05,
   "white": $white,
   "dark": $dark,
+  "red-01": $red-01,
 ) !default;
 // scss-docs-end theme-colors-map
 
